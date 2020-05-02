@@ -1,0 +1,29 @@
+<div x-data="dropdown()">
+    <button x-on:click="open">Open</button>
+
+    <div x-show="isOpen()" x-on:click.away="close">
+        Hello John 
+    </div>
+</div>
+
+<script>
+    function dropdown() {
+        return {
+            show: false,
+            open() { this.show = true },
+            close() { this.show = false },
+            isOpen() { return this.show === true },
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
