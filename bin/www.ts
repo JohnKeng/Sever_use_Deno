@@ -2,7 +2,7 @@ import { Application, NotFoundException } from 'https://deno.land/x/abc@v0.2.11/
 import { logger } from 'https://deno.land/x/abc@v0.2.11/middleware/logger.ts'
 import { join } from 'https://deno.land/std@v0.42.0/path/mod.ts'
 
-const { readFile, transpileOnly  } = Deno
+const { readFile  } = Deno
 
 const app = new Application()
 app.start({ port: 8887, hostname: '0.0.0.0' })
